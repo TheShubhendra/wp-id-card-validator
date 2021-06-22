@@ -9,4 +9,4 @@
  * Author URI:        https://github.com/TheShubhendra
  */
  
- 
+ require __dir__.'/include/settings.php';
