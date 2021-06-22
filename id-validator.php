@@ -10,3 +10,5 @@
  */
  
  require __dir__.'/include/settings.php';
+ require __dir__.'/include/request-handler.php';
+ 

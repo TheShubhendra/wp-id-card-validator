@@ -29,7 +29,8 @@ class GoogleSheetAPI{
     }
     
     function build_fields($data_row){
-        $fields_array = json_decode(get_option("id_validator_sheet_column_notations","{}"), true);
+        $fields = get_option("id_validator_sheet_column_notations","{}");
+        $fields_array = json_decode($fields, true);
         $data_array = array();
         foreach ($fields_array as $name => $notation){
             $data_array[$name] = $data_row[ord($notation) - 65];
@@ -47,8 +48,8 @@ class GoogleSheetAPI{
                 <td><?php echo $value ?></td>
             </tr>
             <?php
-            echo '</table>';
-        }
+	}
+	echo '</table>';
     }
 }
 
