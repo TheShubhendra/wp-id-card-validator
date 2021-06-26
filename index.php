@@ -1,0 +1,2 @@
+<?
+//Sometime silence is necessary

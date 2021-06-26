@@ -1,7 +1,6 @@
 <?php
 
-require_once('/data/data/com.termux/files/home/vendor/autoload.php');
-
+require_once "vendor/autoload.php";
 class GoogleSheetAPI{
     public $client;
     public $service;
