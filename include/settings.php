@@ -107,7 +107,7 @@ function id_validator_sheet_id_callback() {
 }
 
 function id_validator_url_path_callback() {
-    $setting = get_option('id_validator_url_path');
+    $setting = get_option('id_validator_url_path', '~^/verify\?~');
     ?>
     <input type="text" name="id_validator_url_path" value="<?php echo isset( $setting ) ? esc_attr( $setting ) : ''; ?>">
     <p class="description">Default is: ~^/verify\?~ that will hear for requests on https://yoursite.com/verify?ID=1234</p>
@@ -115,7 +115,7 @@ function id_validator_url_path_callback() {
 }
 
 function id_validator_sheet_id_notation_callback() {
-    $setting = get_option('id_validator_sheet_id_notation');
+    $setting = get_option('id_validator_sheet_id_notation', 'A');
     ?>
     <input type="text" name="id_validator_sheet_id_notation" value="<?php echo isset( $setting ) ? esc_attr( $setting ) : ''; ?>">
     <p class="description">ID notation of the column which contains ID (Default is: A)</p>

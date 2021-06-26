@@ -1,7 +1,7 @@
 <?php
 
 function id_validator_request_handler(){
-    $path_pattern = get_option("id_validator_url_path",null);
+    $path_pattern = get_option("id_validator_url_path",'~^/verify\?~');
     if(is_null($path_pattern)){
         return;
     }
