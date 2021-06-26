@@ -93,6 +93,9 @@ function id_validator_api_callback() {
     $setting = get_option('id_validator_api_credentials');
     ?>
     <input type="text" name="id_validator_api_credentials" value="<?php echo isset( $setting ) ? esc_attr( $setting ) : ''; ?>">
+    <p class="description">
+        API credentials of Google service account in JSON format
+    </p>
     <?php
 }
 
@@ -107,6 +110,7 @@ function id_validator_url_path_callback() {
     $setting = get_option('id_validator_url_path');
     ?>
     <input type="text" name="id_validator_url_path" value="<?php echo isset( $setting ) ? esc_attr( $setting ) : ''; ?>">
+    <p class="description">Default is: ~^/verify\?~ that will hear for requests on https://yoursite.com/verify?ID=1234</p>
     <?php
 }
 
@@ -114,6 +118,7 @@ function id_validator_sheet_id_notation_callback() {
     $setting = get_option('id_validator_sheet_id_notation');
     ?>
     <input type="text" name="id_validator_sheet_id_notation" value="<?php echo isset( $setting ) ? esc_attr( $setting ) : ''; ?>">
+    <p class="description">ID notation of the column which contains ID (Default is: A)</p>
     <?php
 }
 
@@ -121,6 +126,9 @@ function id_validator_sheet_column_notations_callback() {
     $setting = get_option('id_validator_sheet_column_notations');
     ?>
     <input type="text" name="id_validator_sheet_column_notations" value="<?php echo isset( $setting ) ? esc_attr( $setting ) : ''; ?>">
+    <p class="description">
+        Example {"ID":"A", "Name":"B"}
+    </p>
     <?php
 }
 
