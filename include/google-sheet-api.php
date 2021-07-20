@@ -43,8 +43,8 @@ class GoogleSheetAPI{
         foreach ($data_array as $name => $value){
             ?>
                 <tr>
-                    <td><?php echo $name ?></td>
-                    <td><?php echo $value ?></td>
+                    <td class="id-name"><?php echo $name ?></td>
+                    <td class="id-value"><?php echo $value ?></td>
                 </tr>
             <?php
 	}
