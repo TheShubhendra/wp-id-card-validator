@@ -11,4 +11,9 @@
  
  require __dir__.'/include/settings.php';
  require __dir__.'/include/request-handler.php';
+ add_action('wp_enqueue_scripts', 'enqueue_scripts',1);
  
+function enqueue_scripts() {
+    wp_register_style( 'id-validator-style', '/wp-content/plugins/id-validator/assets/style/style.css' );
+    wp_enqueue_style( 'id-validator-style' );
+}
