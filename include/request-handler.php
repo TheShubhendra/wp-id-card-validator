@@ -19,9 +19,9 @@ function id_validator_request_handler(){
         $data = $api->fetch_sheet($sheet_id, $id);
         if(is_null($data)){
              ?>
-             <div class="id-validator-head">
+             <div class="id-validator-head id-validator-not-found">
                  <span class="material-icons-outlined">dangerous</span>
-                 <h2 class="id-validator-not-found">ID Card not found</h2>
+                 <h2>ID Card not found</h2>
              </div>
              <?php
          }else{

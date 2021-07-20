@@ -39,10 +39,9 @@ class GoogleSheetAPI{
     }
     
     function build_html($data_array){
-       ?><div class="id-validator-head">
+       ?><div class="id-validator-head id-validator-found">
             <span class="material-icons-outlined">verified</span>
-            <h2 class="id-validator-found">
-           ID Card found</h2>
+            <h2>ID Card found</h2>
          </div>
        <div class="id-validator-info">
            <table>
