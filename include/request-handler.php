@@ -18,7 +18,7 @@ function id_validator_request_handler(){
         $api = new GoogleSheetAPI();
         $data = $api->fetch_sheet($sheet_id, $id);
         if(is_null($data)){
-             echo "<h1>No data found</h1>";
+             echo '<h2 class="id-validator-not-found">ID Card not found</h2>';
          }else{
         $fields = $api->build_fields($data);
         $api->build_html($fields);

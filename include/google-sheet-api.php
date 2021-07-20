@@ -39,16 +39,22 @@ class GoogleSheetAPI{
     }
     
     function build_html($data_array){
-        echo '<div class="id-validator-info"><table>';
+       ?><h2 class="id-validator-found">ID Card found</h2>
+       <div class="id-validator-info">
+           <table>
+           <?php
         foreach ($data_array as $name => $value){
             ?>
                 <tr>
                     <td class="id-name"><?php echo $name ?></td>
-                    <td class="id-value"><?php echo $value ?></td>
+                    <td class="id-value"s><?php echo $value ?></td>
                 </tr>
             <?php
 	}
-	echo '</table></div>';
+	      ?>
+	      </table>
+	   </div>
+	      <?php
     }
 }
 
