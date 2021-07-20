@@ -1,8 +1,8 @@
 .id-validator-info {
   width: 80%;
   margin: 5px auto;
-  max-width: 700px;
-  min-width: 350px;
+  max-width: 600px;
+  min-width: 30px;
   text-align: center;
 }
 .id-validator-info table tr .id-name {
