@@ -7,7 +7,7 @@ function id_validator_request_handler(){
     }
     if(preg_match($path_pattern,$_SERVER["REQUEST_URI"])){
 	    get_header();
-        $id = $_GET["ID"];
+        $id = $_GET["id"];
         if(!isset($id)){
             echo "<h1>No id has been provided</h1>";
             get_footer();
