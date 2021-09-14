@@ -4,14 +4,14 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitd0a6291aaa8dd32c20e1f610f6d099bd
+class ComposerStaticInitce3c6db880254a026a9b683e5fefe85c
 {
     public static $files = array (
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '1f87db08236948d07391152dccb70f04' => __DIR__ . '/..' . '/google/apiclient-services/autoload.php',
         'a8d3953fd9959404dd22d3dfcd0a79f0' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
     );
@@ -135,9 +135,9 @@ class ComposerStaticInitd0a6291aaa8dd32c20e1f610f6d099bd
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitd0a6291aaa8dd32c20e1f610f6d099bd::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitd0a6291aaa8dd32c20e1f610f6d099bd::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitd0a6291aaa8dd32c20e1f610f6d099bd::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitce3c6db880254a026a9b683e5fefe85c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitce3c6db880254a026a9b683e5fefe85c::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitce3c6db880254a026a9b683e5fefe85c::$classMap;
 
         }, null, ClassLoader::class);
     }
